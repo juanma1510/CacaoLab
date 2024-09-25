@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CacaoLab</title>
+  </head>
+  <body class="sensorialBody">
+    <div class="indexContainerSenso">
+      <header class="header">
+        <article class="hContainer">
+          <h1 class="title">CacaoLab</h1>
+          <nav class="hNav">
+            <ul class="list">
+              <li class="item"><a href="home.html">INICIO</a></li>
+              <li class="item">
+                <a href="eSensorial.html">EVALUACION SENSORIAL</a>
+              </li>
+              <li class="item">
+                <a href="../templates/index.html">CALCULADORA</a>
+              </li>
+              <li class="item"><a href="acerca.html">¿QUIENES SOMOS?</a></li>
+            </ul>
+          </nav>
+        </article>
+      </header>
+      <div class="indexTitle">
+        <h2 class="calculadoraTitle">Evaluación Sensorial de Sabores</h2>
+      </div>
+      <div class="eContainer">
+        <div class="instrucciones">
+          <h2 class="iTitle">Instruciones de evaluación sensorial:</h2>
+          <p class="iText">
+            Cada sabor tiene una calificación de 1 a 5:<br />
+            <strong>1 (Muy Baja Intensidad):</strong> El sabor es apenas
+            perceptible.<br />
+            <strong>2 (Baja Intensidad):</strong> El sabor es perceptible pero
+            débil.<br />
+            <strong>3 (Intensidad Media):</strong> El sabor está presente en una
+            cantidad moderada.<br />
+            <strong>4 (Alta Intensidad):</strong> El sabor es claramente dominante.<br />
+            <strong>5 (Muy Alta Intensidad):</strong> El sabor es extremadamente
+            dominante y sobresaliente.
+          </p>
+        </div>
+        <div id="form-container" class="form-container">
+          <h2 class="formTitle">Sabores</h2>
+          <form id="data-form" class="data-form">
+            <div class="sabor">
+              <h3 for="Ácido">Ácido:</h3>
+              <select id="Ácido" name="Ácido" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Astringente">Astringente:</h3>
+              <select id="Astringente" name="Astringente" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Amargo">Amargo:</h3>
+              <select id="Amargo" name="Amargo" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Afrutado">Afrutado:</h3>
+              <select id="Afrutado" name="Afrutado" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Floral">Floral:</h3>
+              <select id="Floral" name="Floral" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Nueces">Nueces:</h3>
+              <select id="Nueces" name="Nueces" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Panela/Malta">Panela/Malta:</h3>
+              <select id="Panela/Malta" name="Panela/Malta" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Crudo Verde">Crudo Verde:</h3>
+              <select id="Crudo Verde" name="Crudo Verde" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="sabor">
+              <h3 for="Herbal">Herbal:</h3>
+              <select id="Herbal" name="Herbal" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="eButton">
+              <button type="submit" class="parameterButton generar">Generar graficos</button>
+
+            </div>
+          </form>
+
+      </div>
+    </div>
+    <div class="graficos"></div>
+
+      
+      <footer>
+        <h3 class="tFooter">© 2024 CacaoLab, Todos los derechos reservados.</h3>
+      </footer>
+    </div>
+    <script src="./sensorial.js"></script>
+  </body>
+</html>

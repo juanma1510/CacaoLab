@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CacaoLab</title>
+
+    <link rel="stylesheet" href="../models/style.css" />
+  </head>
+  <body class="indexBody">
+    <div class="indexContainer">
+      <header class="header">
+        <article class="hContainer">
+          <h1 class="title">CacaoLab</h1>
+          <nav class="hNav">
+            <ul class="list">
+              <li class="item"><a href="../models/home.html">INICIO</a></li>
+              <li class="item">
+                <a href="../models/eSensorial.html">EVALUACION SENSORIAL</a>
+              </li>
+              <li class="item">
+                <a href="../templates/index.html">CALCULADORA</a>
+              </li>
+              <li class="item"><a href="../models/acerca.html">¿QUIENES SOMOS?</a></li>
+            </ul>
+          </nav>
+        </article>
+      </header>
+      <form id="data-form">
+        <article class="indexTitle">
+          <h1 class="calculadoraTitle">Calculadora de Datos</h1>
+        </article>
+        <article class="secciones">
+          <section class="seccion">
+            <h1 class="sectionTitle">Desagüe</h1>
+            <section class="parametrosContainer">
+              <div id="Desagüe_rpm_container" class="parametro">
+                <h2 class="parameterTitle">RPM</h2>
+                <button type="button" onclick="openModal('Desagüe', 'rpm')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Desagüe_rpm_container"></div>
+              </div>
+
+            </section>
+          </section>
+          <section class="seccion">
+            <h1 class="sectionTitle">Fermentación</h1>
+            <section class="parametrosContainer">
+
+              <div id="Fermentación_rpm_container" class="parametro">
+                <h2 class="parameterTitle">RPM</h2>
+                <button type="button" onclick="openModal('Fermentación', 'rpm')" class="parameterButton"> 
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Fermentación_rpm_container"></div>
+              </div>
+              <div id="Fermentación_temperatura (°C)_container" class="parametro">
+                <h2 class="parameterTitle">Temperatura (°C)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Fermentación', 'temperatura (°C)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Fermentación_temperatura (°C)_container"
+                ></div>
+              </div>
+              <div id="Fermentación_humedad relativa (%)_container" class="parametro">
+                <h2 class="parameterTitle">Humedad relativa (%)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Fermentación', 'humedad relativa (%)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div
+                  class="listValues"
+                  id="list_Fermentación_humedad relativa (%)_container"
+                ></div>
+              </div>
+              <div id="Fermentación_grados Brix_container" class="parametro">
+                <h2 class="parameterTitle">Grados Brix(°B)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Fermentación', 'grados Brix')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div
+                  class="listValues"
+                  id="list_Fermentación_grados Brix_container"
+                ></div>
+              </div>
+            </section>
+            </section>
+          <section class="seccion">
+            <h1 class="sectionTitle">Secado</h1>
+            <section class="parametrosContainer">
+              <div id="Secado_rpm_container" class="parametro">
+                <h2 class="parameterTitle">RPM</h2>
+                <button type="button" onclick="openModal('Secado', 'rpm')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Secado_rpm_container"></div>
+              </div>
+              <div id="Secado_temperatura (°C)_container" class="parametro">
+                <h2 class="parameterTitle">Temperatura (°C)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Secado', 'temperatura (°C)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Secado_temperatura (°C)_container"></div>
+              </div>
+              <div id="Secado_humedad relativa (%)_container" class="parametro">
+                <h2 class="parameterTitle">Humedad relativa (%)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Secado', 'humedad relativa (%)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div
+                  class="listValues"
+                  id="list_Secado_humedad relativa (%)_container"
+                ></div>
+              </div>
+              <div id="Secado_presión_container" class="parametro">
+                <h2 class="parameterTitle">Presión</h2>
+                <button type="button" onclick="openModal('Secado', 'presión')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Secado_presión_container"></div>
+              </div>
+
+            </section>
+          </section>
+          <section class="seccion">
+            <h1 class="sectionTitle">Molienda</h1>
+            <section class="parametrosContainer">
+              <div id="Molienda_molienda_container" class="parametro">
+                <h2 class="parameterTitle">Molienda (gruesa, media, fina)</h2>
+                <button type="button" onclick="openModal('Molienda', 'molienda')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Molienda_molienda_container"></div>
+              </div>
+
+            </section>
+          </section>
+        </article>
+
+        <article class="graphicsButton">
+          <button type="button" onclick="validateContainersAndGenerateGraphs()" class="parameterButton">
+            Finalizar y Generar Gráficos
+          </button>
+
+        </article>
+      </form>
+      <div id="graficos"></div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <section class="closeButton">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+          </section>
+          <section class="content">
+            <h2 id="modal-titulo" class="modalTitle">Agregar Valor</h2>
+            <input
+              type="text"
+              id="valor-input"
+              placeholder="Introduce un valor"
+              class="modalInput"
+            />
+
+          </section>
+         <section class="buttons">
+           <button
+             type="button"
+             onclick="currentSection === 'Molienda' ? agregarValorMolienda() : agregarValor()"
+             class="parameterButton"
+           >
+             Guardar Valor
+           </button>
+           <button type="button" onclick="closeModal()" class="parameterButton">Cancelar</button>
+
+         </section>
+        </div>
+      </div>
+
+      <div class="graficos"></div>
+      <div class="downloadContainer">
+        <button id="download" style="display: none" class="parameterButton">Descargar PDF</button>
+      </div>
+      <div class="loader" id="loader">Cargando...</div>
+      <footer>
+        <h3 class="tFooter">© 2024 CacaoLab, Todos los derechos reservados.</h3>
+      </footer>
+    </div>
+    <script src="./scriptCalculator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
