@@ -82,7 +82,8 @@ def generate_pdf():
     secciones = {
         "Desagüe": ["rpm"],
         "Fermentación": ["rpm", "temperatura (°C)", "humedad relativa (%)", "grados Brix"],
-        "Secado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"]
+        "Secado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"],
+        "Tostado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"]
     }
     
     resultados = {}
@@ -155,7 +156,8 @@ def generate_graphs():
     secciones = {
         "Desagüe": ["rpm"],
         "Fermentación": ["rpm", "temperatura (°C)", "humedad relativa (%)", "grados Brix"],
-        "Secado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"]
+        "Secado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"],
+        "Tostado": ["rpm", "temperatura (°C)", "humedad relativa (%)", "presión"]
     }
     
     resultados = {}

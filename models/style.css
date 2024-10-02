@@ -153,8 +153,8 @@ a{text-decoration: none;}
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: 100;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .hNav .list {
@@ -171,8 +171,8 @@ a{text-decoration: none;}
 .hNav .item a {
     color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: 100;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .hNav .item a:hover {
@@ -198,17 +198,22 @@ footer{
 }
 
 /*-------------Home---------------*/
+.homeBody{
+  background-color: #a88e4d;
+}
 
 .container{
-    background-image: url(./img/cacao.jpeg);
+    
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-repeat:no-repeat;
     background-size: cover; /* Escala la imagen para cubrir todo el fondo */
     background-position: center; 
 }
+
+
 .homeContainer{
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -263,7 +268,7 @@ footer{
 /*------------------ INDEX -------------------*/
 
 .indexBody{
-    background-image: url(./img/fruto-del-cacao-2-scaled.jpg);
+    background-color: #A64F03;
     background-repeat:no-repeat;
     background-size: cover; /* Escala la imagen para cubrir todo el fondo */
     background-position: center; 
@@ -293,7 +298,7 @@ footer{
 
 .secciones{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
 }
 
@@ -306,7 +311,8 @@ footer{
 
 .parametrosContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     
@@ -323,7 +329,7 @@ footer{
     border: none;
     border-radius: 5px;
     margin: 10px;
-    width: 35%;
+    width: 55%;
 }
 
 .parameterButton:hover{
@@ -332,10 +338,10 @@ footer{
 }
 
 .parametro{
-    width: 25%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    gap: 5px;
     align-items: center;
     text-align: center;
 }
@@ -392,7 +398,7 @@ ul {
 /*------- EVALUACION SENSORIAL ---------*/
 
 .sensorialBody{
-  background-image: url(./img/sensorialfondo.jpg);
+  background-color: #7E6523;
   background-repeat:no-repeat;
   background-size: cover; /* Escala la imagen para cubrir todo el fondo */
   background-position: center; 
@@ -401,7 +407,6 @@ ul {
 
 .indexContainerSenso{
   width: 100%;
-  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -414,7 +419,8 @@ ul {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 71%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .instrucciones{
@@ -447,20 +453,27 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+  }
+
+  .sFormtitle{
+    display: flex;
+    width: 100%;
   }
 
   .formTitle{
+    width: 100%;
+    text-align: center;
     font-weight: 300;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
   }
 
   .data-form {
-    width: 80%;
+   
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, auto); /* 4 columnas iguales */
-    grid-template-rows: repeat(3, auto) 1fr; /* 2 filas con altura automática, una tercera que es '1fr', y la última fila que ocupará más espacio */
+    grid-template-columns: repeat(3, auto); /* 4 columnas iguales */
+    grid-template-rows: repeat(4, auto) 1fr; /* 2 filas con altura automática, una tercera que es '1fr', y la última fila que ocupará más espacio */
   }
 
   .sabor{
@@ -476,7 +489,9 @@ strong{
     display: flex;
     flex-direction:column ;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    width: 100%;
+    grid-column: 2 / 3;
   }
 
   h3{
@@ -516,7 +531,7 @@ strong{
   /*--------------- ACERCA DE --------------*/
 
   .acercaBody{
-    background-image: url(./img/acercafondo.jpg);
+    background-color: #46591D;
     background-repeat:no-repeat;
     background-size: cover; /* Escala la imagen para cubrir todo el fondo */
     background-position: center; 
@@ -531,6 +546,52 @@ strong{
     flex-direction: column;
     align-items: center;
   }
+
+  /*--------------- SLIDER -------------*/
+  .slider-box{
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.ulSlider{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+    
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    
+}
+
+.slider-box img {
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0; /* Mueve la imagen hacia abajo */
+    transform: translateY(70%); /* Ajusta el valor según lo que necesites */
+
+}
+
+@keyframes slide{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
 
   
 

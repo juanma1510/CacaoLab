@@ -26,6 +26,22 @@
           </nav>
         </article>
       </header>
+      <div class="slider-box">
+
+        <ul class="ulSlider">
+            <li class="liItem"><img src="../models/img/acercafondo.jpg" alt="" class="sliderImage"></li>
+        
+        
+            <li class="liItem"><img src="../models/img/cacao.jpeg" alt="" class="sliderImage"></li>
+        
+        
+            <li class="liItem"><img src="../models/img/fruto-del-cacao-2-scaled.jpg" alt="" class="sliderImage"></li>
+        
+        
+            <li class="liItem"><img src="../models/img/sensorialfondo.jpg" alt="" class="sliderImage"></li>
+        </ul>
+
+    </div>
       <form id="data-form">
         <article class="indexTitle">
           <h1 class="calculadoraTitle">Calculadora de Datos</h1>
@@ -147,6 +163,55 @@
                 </button>
                 <br />
                 <div class="listValues" id="list_Secado_presión_container"></div>
+              </div>
+
+            </section>
+          </section>
+          <section class="seccion">
+            <h1 class="sectionTitle">Tostado</h1>
+            <section class="parametrosContainer">
+              <div id="Tostado_rpm_container" class="parametro">
+                <h2 class="parameterTitle">RPM</h2>
+                <button type="button" onclick="openModal('Tostado', 'rpm')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Tostado_rpm_container"></div>
+              </div>
+              <div id="Tostado_temperatura (°C)_container" class="parametro">
+                <h2 class="parameterTitle">Temperatura (°C)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Tostado', 'temperatura (°C)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Tostado_temperatura (°C)_container"></div>
+              </div>
+              <div id="Tostado_humedad relativa (%)_container" class="parametro">
+                <h2 class="parameterTitle">Humedad relativa (%)</h2>
+                <button
+                  type="button"
+                  onclick="openModal('Tostado', 'humedad relativa (%)')"
+                  class="parameterButton"
+                >
+                  Agregar Valor
+                </button>
+                <br />
+                <div
+                  class="listValues"
+                  id="list_Tostado_humedad relativa (%)_container"
+                ></div>
+              </div>
+              <div id="Tostado_presión_container" class="parametro">
+                <h2 class="parameterTitle">Presión</h2>
+                <button type="button" onclick="openModal('Tostado', 'presión')" class="parameterButton">
+                  Agregar Valor
+                </button>
+                <br />
+                <div class="listValues" id="list_Tostado_presión_container"></div>
               </div>
 
             </section>
