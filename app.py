@@ -1,5 +1,4 @@
 from flask_cors import CORS
-import os
 import base64
 import io
 from flask import Flask, render_template, request, send_file, jsonify
@@ -12,8 +11,6 @@ from reportlab.lib.utils import ImageReader
 from io import BytesIO
 import matplotlib
 from math import pi
-import threading
-import time
 matplotlib.use('Agg')
 
 
